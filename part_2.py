@@ -29,13 +29,6 @@ def resizing(new_width=None, new_height=None, interp=cv2.INTER_LINEAR):
     # cv2.imwrite('girl_linear.jpg', res_img_linear)
 
 
-def concatenate_images():
-    nearest_image = cv2.imread('girl_nearest.jpg')
-    linear_image = cv2.imread('girl_linear.jpg')
-    conc_image = np.concatenate(([nearest_image, linear_image]), axis=1)
-    cv2.imwrite('conc_girl.jpg', conc_image)
-
-
 def shifting():
     h, w = img.shape[:2]
     translation_matrix = np.float32([[1, 0, 200], [0, 1, 300]])
