@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('girl.jpg')
+img = cv2.imread('images/girl.jpg')
 
 
 def resizing(new_width=None, new_height=None, interp=cv2.INTER_LINEAR):
