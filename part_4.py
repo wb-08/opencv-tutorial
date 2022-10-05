@@ -25,7 +25,7 @@ def find_features(img1):
 def find_contours_of_cards(image):
     blurred = cv2.GaussianBlur(image, (3, 3), 0)
     T, thresh_img = cv2.threshold(blurred, 215, 255, cv2.THRESH_BINARY)
-    (_, cnts, _) = cv2.findContours(thresh_img, cv2.RETR_EXTERNAL,
+    (cnts, _) = cv2.findContours(thresh_img, cv2.RETR_EXTERNAL,
                                     cv2.CHAIN_APPROX_SIMPLE)
     return cnts
 
