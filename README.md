@@ -1,5 +1,11 @@
 # Opencv Tutorial
 
+## Install
+
+`pip install opencv-python`
+
+## Articles
+
 I highly recommend to see my articles for better understanding:
 
 Part_1: https://habr.com/ru/post/519454/
